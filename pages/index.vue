@@ -35,6 +35,15 @@
         </template>
       </component-a>
     </template>
+
+    <template #button-component-b>
+      <button
+        class="bg-green-500 text-white w-[200px] h-[200px] p-8"
+        @click="handleClick()"
+      >
+        index - component b
+      </button>
+    </template>
   </child-a>
 </template>
 

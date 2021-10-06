@@ -9,12 +9,22 @@
       child a
       <slot name="component-a"></slot>
     </div>
+
+    <div class="mt-4">
+      child a
+      <component-b>
+        <template #button-component-b>
+          <slot name="button-component-b"></slot>
+        </template>
+      </component-b>
+    </div>
   </div>
 </template>
 
 <script>
+import ComponentB from './child-a/ComponentB.vue'
 export default {
-  components: {},
+  components: { ComponentB },
   data() {
     return {
       buttonName: {
