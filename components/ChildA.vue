@@ -1,6 +1,6 @@
 <template>
   <div class="text-center mt-4 space-x-4">
-    <slot name="slot-a"> </slot>
+    <slot name="slot-a"></slot>
     <slot name="slot-b" :handleClickChildA="handleClickChildA" />
     <slot name="slot-c" :button-name="buttonName" />
     <br />
